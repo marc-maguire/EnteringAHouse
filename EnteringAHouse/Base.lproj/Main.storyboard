@@ -32,7 +32,7 @@
                                 <rect key="frame" x="149" y="530" width="76" height="30"/>
                                 <state key="normal" title="Coat Room"/>
                                 <connections>
-                                    <segue destination="S5B-5K-8fo" kind="presentation" id="ghU-jb-llU"/>
+                                    <segue destination="S5B-5K-8fo" kind="show" id="ghU-jb-llU"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -64,34 +64,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coat_room" translatesAutoresizingMaskIntoConstraints="NO" id="aPZ-fg-PHL">
-                                <rect key="frame" x="-2" y="64" width="379" height="367"/>
+                                <rect key="frame" x="-2" y="20" width="379" height="367"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="379" id="Nq2-kt-bA0"/>
                                     <constraint firstAttribute="height" constant="367" id="THy-0h-Ij6"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="gFQ-QL-FOM">
-                                <rect key="frame" x="38.5" y="528" width="298" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="CuA-yL-XMX">
+                                <rect key="frame" x="143.5" y="429" width="87" height="140"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RVn-3v-uBO">
-                                        <rect key="frame" x="0.0" y="0.0" width="48" height="30"/>
+                                        <rect key="frame" x="19.5" y="0.0" width="48" height="30"/>
                                         <state key="normal" title="Library"/>
                                         <connections>
-                                            <segue destination="lwy-mm-DTr" kind="presentation" id="y9F-3j-PZA"/>
+                                            <segue destination="lwy-mm-DTr" kind="show" id="y9F-3j-PZA"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wh7-Ua-ObD">
-                                        <rect key="frame" x="98" y="0.0" width="87" height="30"/>
+                                        <rect key="frame" x="0.0" y="55" width="87" height="30"/>
                                         <state key="normal" title="Dining Room"/>
                                         <connections>
-                                            <segue destination="QCH-LP-HQb" kind="presentation" id="AxD-Z4-ITI"/>
+                                            <segue destination="QCH-LP-HQb" kind="show" id="AxD-Z4-ITI"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3t5-8H-yGX">
-                                        <rect key="frame" x="235" y="0.0" width="63" height="30"/>
+                                        <rect key="frame" x="12" y="110" width="63" height="30"/>
                                         <state key="normal" title="Stairs Up"/>
                                         <connections>
-                                            <segue destination="GuV-JQ-TVo" kind="presentation" id="ygm-3X-Drz"/>
+                                            <segue destination="GuV-JQ-TVo" kind="show" id="ygm-3X-Drz"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -99,12 +99,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="gFQ-QL-FOM" firstAttribute="centerX" secondItem="DuH-5I-0wt" secondAttribute="centerX" id="4sx-RZ-Zqg"/>
-                            <constraint firstItem="ld3-Za-1hJ" firstAttribute="top" secondItem="gFQ-QL-FOM" secondAttribute="bottom" constant="109" id="Yjz-nW-2b2"/>
-                            <constraint firstItem="gFQ-QL-FOM" firstAttribute="top" secondItem="aPZ-fg-PHL" secondAttribute="bottom" constant="97" id="kw3-Ll-EQa"/>
+                            <constraint firstItem="CuA-yL-XMX" firstAttribute="centerX" secondItem="DuH-5I-0wt" secondAttribute="centerX" id="CmC-hl-B91"/>
+                            <constraint firstItem="CuA-yL-XMX" firstAttribute="top" secondItem="aPZ-fg-PHL" secondAttribute="bottom" constant="42" id="R9x-o6-BmH"/>
                             <constraint firstItem="aPZ-fg-PHL" firstAttribute="centerX" secondItem="DuH-5I-0wt" secondAttribute="centerX" id="tgc-QV-J3q"/>
+                            <constraint firstItem="ld3-Za-1hJ" firstAttribute="top" secondItem="CuA-yL-XMX" secondAttribute="bottom" constant="54" id="uq9-JJ-0ga"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KNr-os-aaf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -141,17 +143,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="library" translatesAutoresizingMaskIntoConstraints="NO" id="b7x-p1-FCk">
-                                <rect key="frame" x="-2" y="64" width="379" height="367"/>
+                                <rect key="frame" x="-2" y="20" width="379" height="367"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="379" id="Uq3-2I-oTk"/>
                                     <constraint firstAttribute="height" constant="367" id="xWV-wS-KG0"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOa-SV-n8J">
-                                <rect key="frame" x="134" y="530" width="107" height="30"/>
+                                <rect key="frame" x="134" y="486" width="107" height="30"/>
                                 <state key="normal" title="Secret Passage"/>
                                 <connections>
-                                    <segue destination="PqJ-AQ-ocU" kind="presentation" id="V9O-l1-nov"/>
+                                    <segue destination="PqJ-AQ-ocU" kind="show" id="V9O-l1-nov"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -164,9 +166,16 @@
                             <constraint firstItem="b7x-p1-FCk" firstAttribute="centerX" secondItem="aAn-Wd-ICk" secondAttribute="centerX" id="ZwL-Dy-cJ3"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Cea-CD-rWJ"/>
+                    <navigationItem key="navigationItem" id="Cea-CD-rWJ">
+                        <barButtonItem key="rightBarButtonItem" title="Restart" id="wsx-II-WGI">
+                            <connections>
+                                <segue destination="haS-io-17c" kind="unwind" unwindAction="prepareForUnwind:" id="J3L-GZ-Ioi"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JDN-Dy-A1h" sceneMemberID="firstResponder"/>
+                <exit id="haS-io-17c" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-52" y="1549"/>
         </scene>
@@ -183,7 +192,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dungeon" translatesAutoresizingMaskIntoConstraints="NO" id="mdi-Ms-39E">
-                                <rect key="frame" x="-2" y="64" width="379" height="367"/>
+                                <rect key="frame" x="-2" y="20" width="379" height="367"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="367" id="3H8-dy-cd9"/>
                                     <constraint firstAttribute="width" constant="379" id="ShY-98-GY3"/>
@@ -196,16 +205,23 @@
                             <constraint firstItem="mdi-Ms-39E" firstAttribute="centerX" secondItem="Kzi-kD-vze" secondAttribute="centerX" id="vMG-nO-0z5"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="l1v-uE-O93"/>
+                    <navigationItem key="navigationItem" id="l1v-uE-O93">
+                        <barButtonItem key="rightBarButtonItem" title="Restart" id="8EU-nk-ogb">
+                            <connections>
+                                <segue destination="vAv-Nw-lV9" kind="unwind" unwindAction="prepareForUnwind:" id="mch-hg-8Ta"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y7a-lg-9s9" sceneMemberID="firstResponder"/>
+                <exit id="vAv-Nw-lV9" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-1134" y="2957"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="B6z-Ko-Pjm">
             <objects>
-                <viewController id="PqJ-AQ-ocU" sceneMemberID="viewController">
+                <viewController id="PqJ-AQ-ocU" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aRe-GV-uVR"/>
                         <viewControllerLayoutGuide type="bottom" id="fSa-9k-flS"/>
@@ -215,34 +231,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="secret_passage" translatesAutoresizingMaskIntoConstraints="NO" id="HUN-lB-IzU">
-                                <rect key="frame" x="-2" y="64" width="379" height="367"/>
+                                <rect key="frame" x="-2" y="20" width="379" height="367"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="367" id="1yr-Nt-2nM"/>
                                     <constraint firstAttribute="width" constant="379" id="VUA-1z-96Q"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="BHs-fB-vdC">
-                                <rect key="frame" x="47" y="528" width="281" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="BHs-fB-vdC">
+                                <rect key="frame" x="144" y="429" width="87" height="140"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xli-d4-r1O">
-                                        <rect key="frame" x="0.0" y="0.0" width="48" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="87" height="30"/>
                                         <state key="normal" title="Library"/>
                                         <connections>
-                                            <segue destination="dXm-tz-PaE" kind="presentation" id="oTr-n6-9Nv"/>
+                                            <segue destination="dXm-tz-PaE" kind="show" id="oTr-n6-9Nv"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eOj-do-w5C">
-                                        <rect key="frame" x="98" y="0.0" width="87" height="30"/>
+                                        <rect key="frame" x="0.0" y="55" width="87" height="30"/>
                                         <state key="normal" title="Dining Room"/>
                                         <connections>
-                                            <segue destination="elh-rn-Smy" kind="presentation" id="Bba-L2-qxX"/>
+                                            <segue destination="elh-rn-Smy" kind="show" id="Bba-L2-qxX"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hg5-aM-l9c">
-                                        <rect key="frame" x="235" y="0.0" width="46" height="30"/>
+                                        <rect key="frame" x="0.0" y="110" width="87" height="30"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
-                                            <segue destination="JfO-Em-YIS" kind="presentation" id="l7Z-Fs-AYk"/>
+                                            <segue destination="JfO-Em-YIS" kind="show" id="l7Z-Fs-AYk"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -250,14 +266,24 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="BHs-fB-vdC" firstAttribute="top" secondItem="HUN-lB-IzU" secondAttribute="bottom" constant="97" id="A9Q-2o-30q"/>
-                            <constraint firstItem="fSa-9k-flS" firstAttribute="top" secondItem="BHs-fB-vdC" secondAttribute="bottom" constant="109" id="OMX-Mj-9ip"/>
                             <constraint firstItem="BHs-fB-vdC" firstAttribute="centerX" secondItem="BEI-Dp-7yQ" secondAttribute="centerX" id="Yle-kp-GPg"/>
+                            <constraint firstItem="BHs-fB-vdC" firstAttribute="top" secondItem="HUN-lB-IzU" secondAttribute="bottom" constant="42" id="beh-3G-JeE"/>
                             <constraint firstItem="HUN-lB-IzU" firstAttribute="centerX" secondItem="BEI-Dp-7yQ" secondAttribute="centerX" id="bkr-1b-EYz"/>
+                            <constraint firstItem="fSa-9k-flS" firstAttribute="top" secondItem="HUN-lB-IzU" secondAttribute="bottom" constant="236" id="hnN-7U-UD7"/>
+                            <constraint firstItem="fSa-9k-flS" firstAttribute="top" secondItem="BHs-fB-vdC" secondAttribute="bottom" constant="54" id="mCy-aC-PDa"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="N6p-TY-01z">
+                        <barButtonItem key="rightBarButtonItem" title="Restart" id="5fo-CP-KdX">
+                            <connections>
+                                <segue destination="jCn-uM-dwD" kind="unwind" unwindAction="prepareForUnwind:" id="hd1-ir-gTM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mhu-JF-cWf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="jCn-uM-dwD" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-52" y="2274"/>
         </scene>
@@ -274,17 +300,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mysterious_lake" translatesAutoresizingMaskIntoConstraints="NO" id="fTF-0Z-QcM">
-                                <rect key="frame" x="-2" y="64" width="379" height="367"/>
+                                <rect key="frame" x="-2" y="20" width="379" height="367"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="379" id="15V-4y-n2M"/>
                                     <constraint firstAttribute="height" constant="367" id="Ia9-v2-dzh"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mn1-3T-ysY">
-                                <rect key="frame" x="135" y="530" width="105" height="30"/>
+                                <rect key="frame" x="135" y="486" width="105" height="30"/>
                                 <state key="normal" title="Cursed Chalice"/>
                                 <connections>
-                                    <segue destination="CMR-sc-XFh" kind="presentation" id="vVB-mp-pUp"/>
+                                    <segue destination="CMR-sc-XFh" kind="show" id="vVB-mp-pUp"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -297,9 +323,16 @@
                             <constraint firstItem="fTF-0Z-QcM" firstAttribute="centerX" secondItem="gUb-a7-9mP" secondAttribute="centerX" id="smu-fn-LJu"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="U6T-cE-naC"/>
+                    <navigationItem key="navigationItem" id="U6T-cE-naC">
+                        <barButtonItem key="rightBarButtonItem" title="Restart" id="WWt-ly-nZp">
+                            <connections>
+                                <segue destination="dw3-PE-FNO" kind="unwind" unwindAction="prepareForUnwind:" id="azp-Bk-BCw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SCt-Yc-G7N" sceneMemberID="firstResponder"/>
+                <exit id="dw3-PE-FNO" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="468" y="2956"/>
         </scene>
@@ -316,17 +349,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="labratory" translatesAutoresizingMaskIntoConstraints="NO" id="tOu-tW-Mx8">
-                                <rect key="frame" x="-2" y="64" width="379" height="367"/>
+                                <rect key="frame" x="-2" y="20" width="379" height="367"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="379" id="LJG-az-liV"/>
                                     <constraint firstAttribute="height" constant="367" id="mIJ-AL-Jwb"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8PQ-Lr-3OC">
-                                <rect key="frame" x="153" y="530" width="69" height="30"/>
+                                <rect key="frame" x="153" y="486" width="69" height="30"/>
                                 <state key="normal" title="Generator"/>
                                 <connections>
-                                    <segue destination="9bu-0s-gED" kind="presentation" id="Aik-HP-Qes"/>
+                                    <segue destination="9bu-0s-gED" kind="show" id="Aik-HP-Qes"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -339,9 +372,16 @@
                             <constraint firstItem="8PQ-Lr-3OC" firstAttribute="centerX" secondItem="bYB-90-7Yl" secondAttribute="centerX" id="wme-vS-iZo"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="bLX-qU-Nch"/>
+                    <navigationItem key="navigationItem" id="bLX-qU-Nch">
+                        <barButtonItem key="rightBarButtonItem" title="Restart" id="boT-r1-Wdm">
+                            <connections>
+                                <segue destination="sv1-5a-hU6" kind="unwind" unwindAction="prepareForUnwind:" id="rhY-HX-kRu"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mcl-r7-QBJ" sceneMemberID="firstResponder"/>
+                <exit id="sv1-5a-hU6" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-303" y="2985"/>
         </scene>
@@ -358,7 +398,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back_porch" translatesAutoresizingMaskIntoConstraints="NO" id="B5p-KO-eIl">
-                                <rect key="frame" x="-2" y="64" width="379" height="367"/>
+                                <rect key="frame" x="-2" y="20" width="379" height="367"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="367" id="JM5-UL-sWm"/>
                                     <constraint firstAttribute="width" constant="379" id="obf-k8-EDr"/>
@@ -371,9 +411,16 @@
                             <constraint firstItem="B5p-KO-eIl" firstAttribute="centerX" secondItem="vB9-JX-6bk" secondAttribute="centerX" id="xIl-c8-URz"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="1do-0q-iTs"/>
+                    <navigationItem key="navigationItem" id="1do-0q-iTs">
+                        <barButtonItem key="rightBarButtonItem" title="Restart" id="dbH-5q-UP6">
+                            <connections>
+                                <segue destination="QTm-Qd-Kei" kind="unwind" unwindAction="prepareForUnwind:" id="53K-SA-nIR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TyP-6B-MCv" sceneMemberID="firstResponder"/>
+                <exit id="QTm-Qd-Kei" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1334" y="2956"/>
         </scene>
@@ -390,14 +437,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kitchen" translatesAutoresizingMaskIntoConstraints="NO" id="78q-v9-37g">
-                                <rect key="frame" x="-2" y="64" width="379" height="367"/>
+                                <rect key="frame" x="-2" y="20" width="379" height="367"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="379" id="h9b-dC-Wpu"/>
                                     <constraint firstAttribute="height" constant="367" id="rHt-oc-NcD"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Byi-cv-5Dl">
-                                <rect key="frame" x="148" y="530" width="78" height="30"/>
+                                <rect key="frame" x="148" y="486" width="78" height="30"/>
                                 <state key="normal" title="Back Porch"/>
                                 <connections>
                                     <segue destination="LH5-Rg-t2Y" kind="show" id="Twg-mW-BJQ"/>
@@ -413,9 +460,16 @@
                             <constraint firstItem="Byi-cv-5Dl" firstAttribute="centerX" secondItem="YLg-5I-vik" secondAttribute="centerX" id="dct-Jo-1vX"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Qn3-zs-6Rc"/>
+                    <navigationItem key="navigationItem" id="Qn3-zs-6Rc">
+                        <barButtonItem key="rightBarButtonItem" title="Restart" id="8Hb-7X-Pi6">
+                            <connections>
+                                <segue destination="qdV-DZ-SfN" kind="unwind" unwindAction="prepareForUnwind:" id="oXH-Fr-R6y"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D3M-Cx-20F" sceneMemberID="firstResponder"/>
+                <exit id="qdV-DZ-SfN" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1334" y="2244"/>
         </scene>
@@ -432,17 +486,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dining_room" translatesAutoresizingMaskIntoConstraints="NO" id="uVN-VS-gQ2">
-                                <rect key="frame" x="-2" y="64" width="379" height="367"/>
+                                <rect key="frame" x="-2" y="20" width="379" height="367"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="379" id="4XK-Yf-dL6"/>
                                     <constraint firstAttribute="height" constant="367" id="pe7-Cn-pPU"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1p2-hH-tn9">
-                                <rect key="frame" x="161" y="530" width="52" height="30"/>
+                                <rect key="frame" x="161" y="486" width="52" height="30"/>
                                 <state key="normal" title="Kitchen"/>
                                 <connections>
-                                    <segue destination="4hC-IR-99U" kind="presentation" id="tbo-Vh-Slk"/>
+                                    <segue destination="4hC-IR-99U" kind="show" id="tbo-Vh-Slk"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -455,9 +509,16 @@
                             <constraint firstItem="1p2-hH-tn9" firstAttribute="top" secondItem="uVN-VS-gQ2" secondAttribute="bottom" constant="99" id="sKF-jo-5FF"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="VjP-Mx-Spy"/>
+                    <navigationItem key="navigationItem" id="VjP-Mx-Spy">
+                        <barButtonItem key="rightBarButtonItem" title="Restart" id="l7h-Z8-U8Q">
+                            <connections>
+                                <segue destination="s3F-rc-isQ" kind="unwind" unwindAction="prepareForUnwind:" id="vxr-MW-JqG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cEf-Ku-RFM" sceneMemberID="firstResponder"/>
+                <exit id="s3F-rc-isQ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1334" y="1550"/>
         </scene>
@@ -474,27 +535,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stairs_up" translatesAutoresizingMaskIntoConstraints="NO" id="ryJ-y5-tqL">
-                                <rect key="frame" x="-2" y="64" width="379" height="367"/>
+                                <rect key="frame" x="-2" y="20" width="379" height="367"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="379" id="o0a-GA-336"/>
                                     <constraint firstAttribute="height" constant="367" id="zSa-Wb-seF"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="cZ2-Ua-Q6h">
-                                <rect key="frame" x="95.5" y="528" width="184" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="UF4-VF-BnD">
+                                <rect key="frame" x="154" y="466" width="67" height="60"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ghk-3f-uad">
-                                        <rect key="frame" x="0.0" y="0.0" width="67" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="67" height="17.5"/>
                                         <state key="normal" title="Bedroom"/>
                                         <connections>
-                                            <segue destination="UB1-Qi-Grw" kind="presentation" id="jQs-3T-UNG"/>
+                                            <segue destination="UB1-Qi-Grw" kind="show" id="jQs-3T-UNG"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AcR-d2-s5o">
-                                        <rect key="frame" x="117" y="0.0" width="67" height="30"/>
+                                        <rect key="frame" x="0.0" y="42.5" width="67" height="17.5"/>
                                         <state key="normal" title="Bathroom"/>
                                         <connections>
-                                            <segue destination="Jt6-Gh-f3R" kind="presentation" id="256-22-rgZ"/>
+                                            <segue destination="Jt6-Gh-f3R" kind="show" id="256-22-rgZ"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -502,16 +563,23 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="cZ2-Ua-Q6h" firstAttribute="centerX" secondItem="bu6-kg-SGx" secondAttribute="centerX" id="EjQ-tq-k64"/>
-                            <constraint firstItem="Sli-5g-LMu" firstAttribute="top" secondItem="cZ2-Ua-Q6h" secondAttribute="bottom" constant="109" id="ExS-Bp-Qxb"/>
-                            <constraint firstItem="cZ2-Ua-Q6h" firstAttribute="top" secondItem="ryJ-y5-tqL" secondAttribute="bottom" constant="97" id="KiL-kd-8vM"/>
                             <constraint firstItem="ryJ-y5-tqL" firstAttribute="centerX" secondItem="bu6-kg-SGx" secondAttribute="centerX" id="UQh-Gt-AGj"/>
+                            <constraint firstItem="Sli-5g-LMu" firstAttribute="top" secondItem="UF4-VF-BnD" secondAttribute="bottom" constant="97" id="nLF-Zv-NKv"/>
                             <constraint firstItem="Sli-5g-LMu" firstAttribute="top" secondItem="ryJ-y5-tqL" secondAttribute="bottom" constant="236" id="oW1-Y6-IgV"/>
+                            <constraint firstItem="UF4-VF-BnD" firstAttribute="top" secondItem="ryJ-y5-tqL" secondAttribute="bottom" constant="79" id="pW4-uS-Ou2"/>
+                            <constraint firstItem="UF4-VF-BnD" firstAttribute="centerX" secondItem="bu6-kg-SGx" secondAttribute="centerX" id="vjy-Xt-2Ov"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="ZyR-ij-gLU"/>
+                    <navigationItem key="navigationItem" id="ZyR-ij-gLU">
+                        <barButtonItem key="rightBarButtonItem" title="Restart" id="Gvm-wW-1Pr">
+                            <connections>
+                                <segue destination="lPN-Ok-uUn" kind="unwind" unwindAction="prepareForUnwind:" id="set-Bm-y8r"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XCh-gJ-MeL" sceneMemberID="firstResponder"/>
+                <exit id="lPN-Ok-uUn" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2108" y="1549"/>
         </scene>
@@ -528,7 +596,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bedroom" translatesAutoresizingMaskIntoConstraints="NO" id="GPd-PE-QgW">
-                                <rect key="frame" x="-2" y="64" width="379" height="367"/>
+                                <rect key="frame" x="-2" y="20" width="379" height="367"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="379" id="2SC-yC-ZIF"/>
                                     <constraint firstAttribute="height" constant="367" id="ObX-sy-2sA"/>
@@ -541,9 +609,16 @@
                             <constraint firstItem="fC1-7K-LUd" firstAttribute="top" secondItem="GPd-PE-QgW" secondAttribute="bottom" constant="236" id="adn-k8-u3E"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="yid-PT-haS"/>
+                    <navigationItem key="navigationItem" id="yid-PT-haS">
+                        <barButtonItem key="rightBarButtonItem" title="Restart" id="6IG-gf-2HP">
+                            <connections>
+                                <segue destination="GBI-MV-Ra3" kind="unwind" unwindAction="prepareForUnwind:" id="0mf-Os-rfa"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7s1-q6-MUx" sceneMemberID="firstResponder"/>
+                <exit id="GBI-MV-Ra3" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2108" y="2301"/>
         </scene>
@@ -560,7 +635,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bathroom" translatesAutoresizingMaskIntoConstraints="NO" id="l1P-Ee-jhI">
-                                <rect key="frame" x="-2" y="64" width="379" height="367"/>
+                                <rect key="frame" x="-2" y="20" width="379" height="367"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="379" id="Avr-1Z-eZH"/>
                                     <constraint firstAttribute="height" constant="367" id="Zg2-4J-g1p"/>
@@ -573,9 +648,16 @@
                             <constraint firstItem="l1P-Ee-jhI" firstAttribute="centerX" secondItem="QIe-7T-9KX" secondAttribute="centerX" id="l5r-Oh-bGK"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Xh5-hC-7wV"/>
+                    <navigationItem key="navigationItem" id="Xh5-hC-7wV">
+                        <barButtonItem key="rightBarButtonItem" title="Restart" id="uFP-c6-ThY">
+                            <connections>
+                                <segue destination="dbv-wz-xxu" kind="unwind" unwindAction="prepareForUnwind:" id="iGd-If-zgs"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QaK-w6-Dlx" sceneMemberID="firstResponder"/>
+                <exit id="dbv-wz-xxu" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2825" y="2244"/>
         </scene>
